@@ -56,3 +56,6 @@ button:hover {
   background-color: #e0e0e0;
   transform: scale(1.05);
 }
+.contador.flash {
+  color: yellow;
+}
