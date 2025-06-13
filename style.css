@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,34 +7,37 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #e2e4eb, #56cc56);
-  color: #fff;
+  font-family: 'Bangers', cursive;
+  background: radial-gradient(circle at center, #000428, #004e92);
+  color: #f0c000;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   padding: 40px;
-  border-radius: 16px;
+  border: 3px solid #f0c000;
+  border-radius: 20px;
   text-align: center;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #f0c000;
 }
 
 h1 {
-  margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
 }
 
 .contador {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 5rem;
   margin-bottom: 30px;
-  transition: transform 0.2s ease;
+  color: #00d0ff;
+  text-shadow: 0 0 10px #00d0ff;
+  transition: transform 0.2s ease, color 0.3s ease;
 }
 
 .botoes {
@@ -42,20 +47,18 @@ h1 {
 }
 
 button {
-  padding: 12px 30px;
-  font-size: 1.2rem;
+  padding: 14px 28px;
+  font-size: 1.5rem;
   border: none;
   border-radius: 10px;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #f0c000;
+  color: #000;
   cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px #f0c000;
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  background-color: #ffeb3b;
   transform: scale(1.05);
-}
-.contador.flash {
-  color: yellow;
 }
